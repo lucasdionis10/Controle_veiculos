@@ -1,6 +1,6 @@
+import requests
 import tkinter
 
-import requests
 import mysql.connector
 from tkinter import *
 from tkinter import ttk
@@ -9,7 +9,7 @@ conexao = mysql.connector.connect(
     host = 'localhost',
     user = 'root',
     password = 'pass',
-    database = 'controle_veículos',
+    database = 'controle_veiculos',
 )
 
 cursor = conexao.cursor()
@@ -284,10 +284,10 @@ Entrada_nome_deleta_motorista = ttk.Combobox(values="Lista de nomes")
 Entrada_nome_deleta_motorista.grid(column = 0, row=12, padx= 2, pady= 2, sticky="nswe", columnspan=4)
 
 Botao_deletar_motorista = Button(Janela, text = "Deletar motorista")
-Botao_deletar_motorista.grid(column=0, row=13, padx= 13, pady=10, sticky="nswe", columnspan=4)
+Botao_deletar_motorista.grid(column=0, row=13, padx= 10, pady=10, sticky="nswe", columnspan=4)
 
 Texto_lista_motoristas = Label(Janela, text="Cadastro_motoristas")
-Texto_lista_motoristas.grid(column=2, row=14)
+Texto_lista_motoristas.grid(column=1, row=14, padx= 10, pady=10, sticky="nswe", columnspan=4)
 #_____________________________________________
 
 Texto_cria_veiculo = Label(Janela, text="Adicione um Veículo")
@@ -362,7 +362,7 @@ Entrada_nome_deleta_veiculo.grid(column = 0, row=31, padx= 2, pady= 2, sticky="n
 Botao_deletar_veiculo = Button(Janela, text = "Deletar veículo")
 Botao_deletar_veiculo.grid(column=0, row=32, padx= 10, pady=10, sticky="nswe", columnspan=4)
 
-Texto_lista_veiculo = Label(Janela, text="Cadastro_motoristas")
+Texto_lista_veiculo = Label(Janela, text="Cadastro_veículo")
 Texto_lista_veiculo.grid(column=0, row=33, sticky="nswe", columnspan=4)
 
 
