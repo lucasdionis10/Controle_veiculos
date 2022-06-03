@@ -217,6 +217,312 @@ cursor = conexao.cursor()
 
 
 
+
+
+def abrir_Janela2():
+    Janela2 = tkinter.Toplevel()
+    Janela2.title("Cadastro motoristas")
+    # cria motorista
+
+    Texto_cria_motorista = Label(Janela2, text="Adicione um motorista")
+    Texto_cria_motorista.grid(column=0, row=1, sticky="nswe", columnspan=3)
+
+    Texto_cria_motorista_nome = Label(Janela2, text="Nome:")
+    Texto_cria_motorista_nome.grid(column=0, row=2)
+
+    Texto_cria_motorista_telefone = Label(Janela2, text="Telefone:")
+    Texto_cria_motorista_telefone.grid(column=1, row=2)
+
+    Texto_cria_motorista_CNH = Label(Janela2, text="CNH:")
+    Texto_cria_motorista_CNH.grid(column=2, row=2)
+
+    Entrada_nome_motorista = tkinter.Entry(Janela2)
+    Entrada_nome_motorista.grid(column=0, row=3, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_telefone_motorista = tkinter.Entry(Janela2)
+    Entrada_telefone_motorista.grid(column=1, row=3, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_CNH_motorista = tkinter.Entry(Janela2)
+    Entrada_CNH_motorista.grid(column=2, row=3, padx=3, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_criar_motorista = Button(Janela2, text="Adicionar motorista")
+    Botao_criar_motorista.grid(column=0, row=4, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    # edita motorista
+
+    Texto_edita_motorista = Label(Janela2, text="Edite um motorista")
+    Texto_edita_motorista.grid(column=0, row=7, sticky="nswe", columnspan=4)
+
+    Texto_edita_motorista_nome = Label(Janela2, text="Nome:")
+    Texto_edita_motorista_nome.grid(column=0, row=8)
+
+    Texto_edita_motorista_telefone = Label(Janela2, text="Telefone:")
+    Texto_edita_motorista_telefone.grid(column=1, row=8)
+
+    Texto_edita_motorista_CNH = Label(Janela2, text="CNH:")
+    Texto_edita_motorista_CNH.grid(column=2, row=8)
+
+    Entrada_edita_nome_motorista = ttk.Combobox(Janela2, values="Nomes")
+    Entrada_edita_nome_motorista.grid(column=0, row=9, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_telefone_motorista = ttk.Combobox(Janela2, values="Telefone")
+    Entrada_edita_telefone_motorista.grid(column=1, row=9, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_CNH_motorista = ttk.Combobox(Janela2, values="CNH")
+    Entrada_edita_CNH_motorista.grid(column=2, row=9, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_editar_motorista = Button(Janela2, text="Editar motorista")
+    Botao_editar_motorista.grid(column=0, row=10, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    Texto_deleta_motorista = Label(Janela2, text="Delete um motorista")
+    Texto_deleta_motorista.grid(column=0, row=11, sticky="nswe", columnspan=3)
+
+    Entrada_nome_deleta_motorista = ttk.Combobox(Janela2, values="Lista de nomes")
+    Entrada_nome_deleta_motorista.grid(column=0, row=12, padx=2, pady=2, sticky="nswe", columnspan=4)
+
+    Botao_deletar_motorista = Button(Janela2, text="Deletar motorista")
+    Botao_deletar_motorista.grid(column=0, row=13, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    Texto_lista_motoristas = Label(Janela2, text="Cadastro_motoristas")
+    Texto_lista_motoristas.grid(column=0, row=14, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+
+
+def abrir_Janela3():
+    Janela3 = tkinter.Toplevel()
+    Janela3.title("Cadastro veículos")
+
+    Texto_cria_veiculo = Label(Janela3, text="Adicione um Veículo")
+    Texto_cria_veiculo.grid(column=0, row=0, sticky="nswe", columnspan=4)
+
+    Texto_cria_veiculo_placa = Label(Janela3, text="Placa:")
+    Texto_cria_veiculo_placa.grid(column=0, row=1)
+
+    Texto_cria_veiculo_marca = Label(Janela3, text="Marca:")
+    Texto_cria_veiculo_marca.grid(column=1, row=1)
+
+    Texto_cria_veiculo_veiculo = Label(Janela3, text="Veículo:")
+    Texto_cria_veiculo_veiculo.grid(column=2, row=1)
+
+    Texto_cria_veiculo_troca_de_oleo = Label(Janela3, text="Km de troca de óleo:")
+    Texto_cria_veiculo_troca_de_oleo.grid(column=3, row=1)
+
+    Entrada_cria_veiculo_placa = tkinter.Entry(Janela3)
+    Entrada_cria_veiculo_placa.grid(column=0, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_veiculo_marca = tkinter.Entry(Janela3)
+    Entrada_cria_veiculo_marca.grid(column=1, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_veiculo_veiculo = tkinter.Entry(Janela3)
+    Entrada_cria_veiculo_veiculo.grid(column=2, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_veiculo_km_troca_de_oleo = tkinter.Entry(Janela3)
+    Entrada_cria_veiculo_km_troca_de_oleo.grid(column=3, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_criar_veiculo = Button(Janela3, text="Adicionar veículo")
+    Botao_criar_veiculo.grid(column=0, row=3, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    Texto_edita_veiculo = Label(Janela3, text="Edite um veículo")
+    Texto_edita_veiculo.grid(column=0, row=4, sticky="nswe", columnspan=4)
+
+    Texto_edita_veiculo_placa = Label(Janela3, text="Placa:")
+    Texto_edita_veiculo_placa.grid(column=0, row=5)
+
+    Texto_edita_veiculo_marca = Label(Janela3, text="Marca:")
+    Texto_edita_veiculo_marca.grid(column=1, row=5)
+
+    Texto_edita_veiculo_veiculo = Label(Janela3, text="Veículo:")
+    Texto_edita_veiculo_veiculo.grid(column=2, row=5)
+
+    Texto_edita_veiculo_km_troca_oleo = Label(Janela3, text="Km troca de óleo:")
+    Texto_edita_veiculo_km_troca_oleo.grid(column=3, row=5)
+
+    Entrada_edita_placa_veiculo = ttk.Combobox(Janela3, values="Placas")
+    Entrada_edita_placa_veiculo.grid(column=0, row=6, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_marca_veiculo = ttk.Combobox(Janela3, values="Marcas")
+    Entrada_marca_veiculo.grid(column=1, row=6, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_veiculo_veiculo = ttk.Combobox(Janela3, values="Veículos")
+    Entrada_edita_veiculo_veiculo.grid(column=2, row=6, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_km_troca_oleo_veiculo = ttk.Combobox(Janela3, values="Km_troca_oleo")
+    Entrada_edita_km_troca_oleo_veiculo.grid(column=3, row=6, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_editar_veiculo = Button(Janela3, text="Editar veículo")
+    Botao_editar_veiculo.grid(column=0, row=7, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    Texto_deleta_veiculo = Label(Janela3, text="Delete um veículo")
+    Texto_deleta_veiculo.grid(column=0, row=8, sticky="nswe", columnspan=4)
+
+    Entrada_nome_deleta_veiculo = ttk.Combobox(Janela3, values="Lista de placas")
+    Entrada_nome_deleta_veiculo.grid(column=0, row=9, padx=2, pady=2, sticky="nswe", columnspan=4)
+
+    Botao_deletar_veiculo = Button(Janela3, text="Deletar veículo")
+    Botao_deletar_veiculo.grid(column=0, row=10, padx=10, pady=10, sticky="nswe", columnspan=4)
+
+    Texto_lista_veiculo = Label(Janela3, text="Cadastro_veículos")
+    Texto_lista_veiculo.grid(column=0, row=11, sticky="nswe", columnspan=4)
+
+def abrir_Janela4():
+    Janela4 = tkinter.Toplevel()
+    Janela4.title("Cadastro controle")
+
+    Texto_cria_controle = Label(Janela4, text="Adicione um controle")
+    Texto_cria_controle.grid(column=0, row=0, sticky="nswe", columnspan=6)
+
+    Texto_cria_controle_veiculo = Label(Janela4, text="Veículo")
+    Texto_cria_controle_veiculo.grid(column=0, row=1)
+
+    Texto_cria_controle_motorista = Label(Janela4, text="Motorista:")
+    Texto_cria_controle_motorista.grid(column=1, row=1)
+
+    Texto_cria_controle_data_saida = Label(Janela4, text="Data de saída:")
+    Texto_cria_controle_data_saida.grid(column=2, row=1)
+
+    Texto_cria_controle_hora_saida = Label(Janela4, text="Horário de saída:")
+    Texto_cria_controle_hora_saida.grid(column=3, row=1)
+
+    Texto_cria_controle_km_saida = Label(Janela4, text="Km de Saída:")
+    Texto_cria_controle_km_saida.grid(column=4, row=1)
+
+    Texto_cria_controle_destino = Label(Janela4, text="Destino:")
+    Texto_cria_controle_destino.grid(column=5, row=1)
+
+
+    Entrada_cria_controle_veiculo = tkinter.Entry(Janela4)
+    Entrada_cria_controle_veiculo.grid(column=0, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_motorista = tkinter.Entry(Janela4)
+    Entrada_cria_controle_motorista.grid(column=1, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_data_saida = tkinter.Entry(Janela4)
+    Entrada_cria_controle_data_saida.grid(column=2, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_hora_saida = tkinter.Entry(Janela4)
+    Entrada_cria_controle_hora_saida.grid(column=3, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_km_saida = tkinter.Entry(Janela4)
+    Entrada_cria_controle_km_saida.grid(column=4, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_destino = tkinter.Entry(Janela4)
+    Entrada_cria_controle_destino.grid(column=5, row=2, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+
+    Texto_cria_controle_data_retorno = Label(Janela4, text="Data de retorno:")
+    Texto_cria_controle_data_retorno.grid(column=0, row=3)
+
+    Texto_cria_controle_hora_retorno = Label(Janela4, text="Horário de retorno:")
+    Texto_cria_controle_hora_retorno.grid(column=1, row=3)
+
+    Texto_cria_controle_km_retorno = Label(Janela4, text="Km retorno:")
+    Texto_cria_controle_km_retorno.grid(column=2, row=3)
+
+    Texto_cria_controle_km_percorrido = Label(Janela4, text="Km percorrido:")
+    Texto_cria_controle_km_percorrido.grid(column=3, row=3)
+
+    Entrada_cria_controle_data_retorno = tkinter.Entry(Janela4)
+    Entrada_cria_controle_data_retorno.grid(column=0, row=4, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_hora_retorno = tkinter.Entry(Janela4)
+    Entrada_cria_controle_hora_retorno.grid(column=1, row=4, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_km_retorno = tkinter.Entry(Janela4)
+    Entrada_cria_controle_km_retorno.grid(column=2, row=4, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_cria_controle_km_percorrido = tkinter.Entry(Janela4)
+    Entrada_cria_controle_km_percorrido.grid(column=3, row=4, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_criar_controle = Button(Janela4, text="Adicionar controle")
+    Botao_criar_controle.grid(column=0, row=5, padx=10, pady=10, sticky="nswe", columnspan=6)
+
+
+
+    Texto_edita_controle = Label(Janela4, text="Edite um controle")
+    Texto_edita_controle.grid(column=0, row=6, sticky="nswe", columnspan=4)
+
+    Texto_edita_controle_veiculo = Label(Janela4, text="Veículo")
+    Texto_edita_controle_veiculo.grid(column=0, row=7)
+
+    Texto_edita_controle_motorista = Label(Janela4, text="Motorista:")
+    Texto_edita_controle_motorista.grid(column=1, row=7)
+
+    Texto_edita_controle_data_saida = Label(Janela4, text="Data de saída:")
+    Texto_edita_controle_data_saida.grid(column=2, row=7)
+
+    Texto_edita_controle_hora_saida = Label(Janela4, text="Horário de saída:")
+    Texto_edita_controle_hora_saida.grid(column=3, row=7)
+
+    Texto_edita_controle_km_saida = Label(Janela4, text="Km de saída:")
+    Texto_edita_controle_km_saida.grid(column=4, row=7)
+
+    Texto_edita_controle_destino = Label(Janela4, text="Destino:")
+    Texto_edita_controle_destino.grid(column=5, row=7)
+
+
+    Entrada_edita_veiculo_controle = ttk.Combobox(Janela4, values="Veículos")
+    Entrada_edita_veiculo_controle.grid(column=0, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_motorista_controle = ttk.Combobox(Janela4, values="Motoristas")
+    Entrada_edita_motorista_controle.grid(column=1, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_data_saida_controle = ttk.Combobox(Janela4, values="Datas de saída")
+    Entrada_edita_data_saida_controle.grid(column=2, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_hora_saida_controle = ttk.Combobox(Janela4, values="Horário de saída")
+    Entrada_edita_hora_saida_controle.grid(column=3, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_km_saida_controle = ttk.Combobox(Janela4, values="Km de saída")
+    Entrada_edita_km_saida_controle.grid(column=4, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_destino_controle = ttk.Combobox(Janela4, values="Destino")
+    Entrada_edita_destino_controle.grid(column=5, row=8, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+
+    Texto_edita_controle_data_retorno = Label(Janela4, text="Data de retorno:")
+    Texto_edita_controle_data_retorno.grid(column=0, row=9)
+
+    Texto_edita_controle_hora_retorno = Label(Janela4, text="Horário de retorno:")
+    Texto_edita_controle_hora_retorno.grid(column=1, row=9)
+
+    Texto_edita_controle_km_retorno = Label(Janela4, text="Km retorno:")
+    Texto_edita_controle_km_retorno.grid(column=2, row=9)
+
+    Texto_edita_controle_km_percorrido = Label(Janela4, text="Km percorrido:")
+    Texto_edita_controle_km_percorrido.grid(column=3, row=9)
+
+
+    Entrada_edita_data_retorno_controle = ttk.Combobox(Janela4, values="Datas de retorno")
+    Entrada_edita_data_retorno_controle.grid(column=0, row=10, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_hora_retorno_edita_controle = ttk.Combobox(Janela4, values="Horário de retorno")
+    Entrada_edita_hora_retorno_edita_controle.grid(column=1, row=10, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_km_retorno_controle = ttk.Combobox(Janela4, values="Km de retorno")
+    Entrada_edita_km_retorno_controle.grid(column=2, row=10, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Entrada_edita_km_percorrido_controle = ttk.Combobox(Janela4, values="Km percorrido")
+    Entrada_edita_km_percorrido_controle.grid(column=3, row=10, padx=2, pady=2, sticky="nswe", columnspan=1)
+
+    Botao_editar_controle = Button(Janela4, text="Editar Controle")
+    Botao_editar_controle.grid(column=0, row=11, padx=10, pady=10, sticky="nswe", columnspan=6)
+
+
+
+    Texto_deleta_controle = Label(Janela4, text="Delete um controle")
+    Texto_deleta_controle.grid(column=0, row=12, sticky="nswe", columnspan=6)
+
+    Entrada_nome_deleta_controle = ttk.Combobox(Janela4, values="Lista de Log")
+    Entrada_nome_deleta_controle.grid(column=0, row=13, padx=2, pady=2, sticky="nswe", columnspan=6)
+
+    Botao_deletar_controle = Button(Janela4, text="Deletar controle")
+    Botao_deletar_controle.grid(column=0, row=14, padx=10, pady=10, sticky="nswe", columnspan=6)
+
+    Texto_lista_controle = Label(Janela4, text="Cadastro_controle")
+    Texto_lista_controle.grid(column=0, row=15, sticky="nswe", columnspan=6)
+
+
+
 Janela = Tk()
 
 Janela.title("Controle veículos")
@@ -224,146 +530,25 @@ Janela.title("Controle veículos")
 Texto_cabecalho = Label(Janela, text="Controle de veículos")
 Texto_cabecalho.grid(column=0, row=0, padx= 2, pady= 2,sticky="nswe", columnspan=3)
 
-#cria motorista
+Texto_acima_motoristas = Label(Janela, text="Adicione/edite/delete um motorista")
+Texto_acima_motoristas.grid(column=0, row=1, padx= 2, pady= 2,sticky="nswe", columnspan=3)
 
-Texto_cria_motorista = Label(Janela, text="Adicione um motorista")
-Texto_cria_motorista.grid(column=0, row=1, sticky="nswe", columnspan=3)
-
-Texto_cria_motorista_nome=Label(Janela, text="Nome:")
-Texto_cria_motorista_nome.grid(column=0, row=2)
-
-Texto_cria_motorista_telefone=Label(Janela, text="Telefone:")
-Texto_cria_motorista_telefone.grid(column=1, row=2)
-
-Texto_cria_motorista_CNH=Label(Janela, text="CNH:")
-Texto_cria_motorista_CNH.grid(column=2, row=2)
-
-Entrada_nome_motorista = tkinter.Entry()
-Entrada_nome_motorista.grid(column=0, row=3, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_telefone_motorista = tkinter.Entry()
-Entrada_telefone_motorista.grid(column=1, row=3, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_CNH_motorista = tkinter.Entry()
-Entrada_CNH_motorista.grid(column=2, row=3, padx= 3, pady= 2, sticky="nswe", columnspan=1)
-
-Botao_criar_motorista = Button(Janela, text = "Adicionar motorista")
-Botao_criar_motorista.grid(column=0, row=4, padx= 10, pady=10, sticky="nswe", columnspan=4)
+Botao_janela_motoristas = Button(Janela, text = "Janela de motoristas", command=abrir_Janela2)
+Botao_janela_motoristas.grid(column=0, row=3, padx= 10, pady=10, sticky="nswe", columnspan=4)
 
 
-#edita motorista
+Texto_acima_veiculos = Label(Janela, text="Adicione/edite/delete um veículo")
+Texto_acima_veiculos.grid(column=0, row=4, padx= 2, pady= 2,sticky="nswe", columnspan=3)
 
-Texto_edita_motorista = Label(Janela, text="Edite um motorista")
-Texto_edita_motorista.grid(column=0, row=7, sticky="nswe", columnspan=4)
-
-Texto_edita_motorista_nome=Label(Janela, text="Nome:")
-Texto_edita_motorista_nome.grid(column=0, row=8)
-
-Texto_edita_motorista_telefone=Label(Janela, text="Telefone:")
-Texto_edita_motorista_telefone.grid(column=1, row=8)
-
-Texto_edita_motorista_CNH=Label(Janela, text="CNH:")
-Texto_edita_motorista_CNH.grid(column=2, row=8)
-
-Entrada_nome_edita_motorista = ttk.Combobox(values="Nomes")
-Entrada_nome_edita_motorista.grid(column = 0, row=9, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_telefone_edita_motorista = ttk.Combobox(values="Telefone")
-Entrada_telefone_edita_motorista.grid(column = 1, row=9, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_CNH_edita_motorista = ttk.Combobox(values="CNH")
-Entrada_CNH_edita_motorista.grid(column = 2, row=9, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Botao_editar_motorista = Button(Janela, text = "Editar motorista")
-Botao_editar_motorista.grid(column=0, row=10, padx= 10, pady=10, sticky="nswe", columnspan=4)
-
-Texto_deleta_motorista = Label(Janela, text="Delete um motorista")
-Texto_deleta_motorista.grid(column=0, row=11, sticky="nswe", columnspan=3)
-
-Entrada_nome_deleta_motorista = ttk.Combobox(values="Lista de nomes")
-Entrada_nome_deleta_motorista.grid(column = 0, row=12, padx= 2, pady= 2, sticky="nswe", columnspan=4)
-
-Botao_deletar_motorista = Button(Janela, text = "Deletar motorista")
-Botao_deletar_motorista.grid(column=0, row=13, padx= 10, pady=10, sticky="nswe", columnspan=4)
-
-Texto_lista_motoristas = Label(Janela, text="Cadastro_motoristas")
-Texto_lista_motoristas.grid(column=1, row=14, padx= 10, pady=10, sticky="nswe", columnspan=4)
-#_____________________________________________
-
-Texto_cria_veiculo = Label(Janela, text="Adicione um Veículo")
-Texto_cria_veiculo.grid(column=0, row=15, sticky="nswe", columnspan=4)
-
-Texto_cria_veiculo_placa=Label(Janela, text="Placa:")
-Texto_cria_veiculo_placa.grid(column=0, row=16)
-
-Texto_cria_veiculo_marca=Label(Janela, text="Marca:")
-Texto_cria_veiculo_marca.grid(column=1, row=16)
-
-Texto_cria_veiculo_veiculo=Label(Janela, text="Veículo:")
-Texto_cria_veiculo_veiculo.grid(column=2, row=16)
-
-Texto_cria_veiculo_troca_de_oleo=Label(Janela, text="Km de Troca de óleo:")
-Texto_cria_veiculo_troca_de_oleo.grid(column=3, row=16)
+Botao_janela_veiculos = Button(Janela, text = "Janela de veículos", command=abrir_Janela3)
+Botao_janela_veiculos.grid(column=0, row=5, padx= 10, pady=10, sticky="nswe", columnspan=4)
 
 
-Entrada_cria_veiculo_placa = tkinter.Entry()
-Entrada_cria_veiculo_placa.grid(column = 0, row=17, padx= 2, pady= 2, sticky="nswe", columnspan=1)
+Texto_acima_controle = Label(Janela, text="Adicione/edite/delete um controle")
+Texto_acima_controle.grid(column=0, row=6, sticky="nswe", columnspan=4)
 
-Entrada_cria_veiculo_marca = tkinter.Entry()
-Entrada_cria_veiculo_marca.grid(column = 1, row=17, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_cria_veiculo_veiculo = tkinter.Entry()
-Entrada_cria_veiculo_veiculo.grid(column = 2, row=17, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_cria_veiculo_km_troca_de_oleo = tkinter.Entry()
-Entrada_cria_veiculo_km_troca_de_oleo.grid(column = 3, row=17, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-
-Botao_criar_veiculo = Button(Janela, text = "Adicionar veículo")
-Botao_criar_veiculo.grid(column=0, row=18, padx= 10, pady=10, sticky="nswe", columnspan=4)
-
-
-Texto_edita_veiculo = Label(Janela, text="Edite um veículo")
-Texto_edita_veiculo.grid(column=0, row=19, sticky="nswe", columnspan=4)
-
-Texto_edita_veiculo_placa=Label(Janela, text="Placa:")
-Texto_edita_veiculo_placa.grid(column=0, row=20)
-
-Texto_edita_veiculo_marca=Label(Janela, text="Marca:")
-Texto_edita_veiculo_marca.grid(column=1, row=20)
-
-Texto_edita_veiculo_veiculo=Label(Janela, text="Veículo:")
-Texto_edita_veiculo_veiculo.grid(column=2, row=20)
-
-Texto_edita_veiculo_km_troca_oleo=Label(Janela, text="Km troca de óleo:")
-Texto_edita_veiculo_km_troca_oleo.grid(column=3, row=20)
-
-Entrada_placa_edita_veiculo= ttk.Combobox(values="Placas")
-Entrada_placa_edita_veiculo.grid(column = 0, row=21, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_marca_edita_veiculo = ttk.Combobox(values="Marcas")
-Entrada_marca_edita_veiculo.grid(column = 1, row=21, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_veiculo_edita_veiculo = ttk.Combobox(values="Veículos")
-Entrada_veiculo_edita_veiculo.grid(column = 2, row=21, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Entrada_km_troca_oleo_edita_veiculo = ttk.Combobox(values="Km_troca_oleo")
-Entrada_km_troca_oleo_edita_veiculo.grid(column = 3, row=21, padx= 2, pady= 2, sticky="nswe", columnspan=1)
-
-Botao_editar_veiculo = Button(Janela, text = "Editar veículo")
-Botao_editar_veiculo.grid(column=0, row=22, padx= 10, pady=10, sticky="nswe", columnspan=4)
-
-Texto_deleta_veiculo = Label(Janela, text="Delete um veículo")
-Texto_deleta_veiculo.grid(column=0, row=30, sticky="nswe", columnspan=4)
-
-Entrada_nome_deleta_veiculo = ttk.Combobox(values="Lista de placas")
-Entrada_nome_deleta_veiculo.grid(column = 0, row=31, padx= 2, pady= 2, sticky="nswe", columnspan=4)
-
-Botao_deletar_veiculo = Button(Janela, text = "Deletar veículo")
-Botao_deletar_veiculo.grid(column=0, row=32, padx= 10, pady=10, sticky="nswe", columnspan=4)
-
-Texto_lista_veiculo = Label(Janela, text="Cadastro_veículo")
-Texto_lista_veiculo.grid(column=0, row=33, sticky="nswe", columnspan=4)
+Botao_janela_controle = Button(Janela, text = "Janela de controles", command=abrir_Janela4)
+Botao_janela_controle.grid(column=0, row=7, padx= 10, pady=10, sticky="nswe", columnspan=4)
 
 
 Janela.mainloop()
